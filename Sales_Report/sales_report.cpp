@@ -14,8 +14,9 @@ int main() {
 	ifstream file("sales_data.txt");
 
 	char *data;
-	file.read(data, 20);
+	file.getline(data, 20);
 
+	printf(data);
 
 	file.close();
 	return 0;
